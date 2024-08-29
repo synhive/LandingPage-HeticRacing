@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Racing Sans One';
+    src: url('../assets/fonts/RacingSansOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url('../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    /* Colors */
+    --white:#fff;
+    --primary-color: #C728CA;
+    --secondary-color: #7000FF;
+    --third-color:#0500FF ;
+    --fourth-color:#3EB8E5;
+    --red:#EE1D23;
+    --background-color-body:#06091D;
+    --grey-grey-200: #C9C1D7;
+
+    /* Numbers */
+        /* BORDER */
+        --border-thin: 8px;
+        --border-thick: 12px;
+        --border-medium:16px;
+        --border-circle: 10000px;
+        /* FONT */
+            /* FONT WEIGHT */
+                --font-weight-light: 300;
+                --font-weight-normal: 400;
+                --font-weight-bold: 700;
+                --font-weight-bolder: 900;
+            /* FONT SIZE */
+                --text-size-small: 0.875em;
+                --text-size-normal: 1em;
+                --text-size-medium: 1.125em;
+                --text-size-large: 1.25em;
+                --text-size-xlarge: 1.5em;
+                --text-size-xxlarge: 2em;
+        /* SPACING */
+            --spacing-tiny:8px;
+            --spacing-small:16px;
+            --spacing-medium:24px;
+            --spacing-large:32px;
+            --spacing-xlarge:40px;
+            --spacing-xxlarge:80px;
+            --spacing-xxxlarge:160px;
+            --spacing-4xlarge:184px;
+            --spacing-5xlarge:208px;
+            --spacing-6xlarge:240px;
+            /* WIDTH  */
+            --full-width: 100%;
+}
+
+body,a,p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: ;
+}
+
+.italic-text {
+    font-family: 'Montserrat Italic', sans-serif;
+}
+
+.document--title,.nav__link--logo {
+    font-family: "Racing Sans One", sans-serif;
+}

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const languageSelect = document.getElementById('language-select');
 
     function loadTranslations(lang) {
-        const translationFiles = ['homepage'];
+        const translationFiles = ['homepage','common'];
         const translations = {};
 
         Promise.all(
@@ -14,7 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
         ).then(() => {
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
-                element.textContent = translations[key];
+                const keys = key.split('.');
+                let value = translations;
+                keys.forEach(k => {
+                    value = value[k];
+                });
+                if (value) {
+                    element.textContent = value;
+                }
             });
         }).catch(error => console.error('Error loading translations:', error));
     }

@@ -1,0 +1,29 @@
+.nav__list{
+    padding: var(--spacing-tiny) var(--spacing-xxxlarge);
+    background-color: var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav__right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-xlarge);
+    }
+    
+    .nav__link{
+        color: var(--white);
+        font-size: var(--text-size-medium);
+        font-weight: var(--font-weight-normal);
+    
+        &.nav__link--logo{
+            font-size: var(--text-size-xxlarge);
+        }
+    }
+}
+
+
+
+
+
